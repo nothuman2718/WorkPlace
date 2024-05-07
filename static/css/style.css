@@ -1,0 +1,139 @@
+/* Container Styles */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 30px 0;
+  /* Add background image (replace with your image URL) */
+  background-image: url("[image url]");
+  /* Change font family (replace with desired font) */
+  font-family: [font name];
+}
+
+/* Sticky Navigation Styles */
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 0px;
+  background-color: #f64c72;
+  border-radius: 6px;
+}
+
+/* Navigation Link Styles */
+.nav-item a:hover {
+  color: black;
+  background-color: #2f2fa2;
+  border-radius: 0px;
+}
+
+.nav-link.active {
+  color: black;
+  background-color: red;
+  border-radius: 0px;
+  /* Add bottom border to active link */
+  border-bottom: 2px solid red;
+}
+
+.nav-item a {
+  padding: 5px;
+  color: black;
+  transition: all 0.3s ease;
+  /* Add subtle hover shadow */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Secondary Button Styles */
+.btn-secondary {
+  background-color: #242582;
+}
+
+/* Banner Container Styles */
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(to top, #f64c72, white);
+  border-radius: 6px;
+  border: solid #2f2fa2;
+}
+
+/* Banner Text Styles */
+.banner-text {
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+/* Banner Image Styles */
+.banner-img {
+  padding-top: 12px;
+}
+
+/* Feed Container Styles */
+.feed-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Text Details Styles */
+.text-details {
+  color: white;
+  background-color: #242582;
+  padding: 6px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Feed Details Styles */
+.details {
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+/* Common Button Styles */
+.common-btn {
+  color: white;
+  background-color: blue; /* Experiment with different shades */
+  height: auto;
+  width: 30%;
+  border-radius: 6px;
+  border-color: #242582;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Feed Post Content Styles */
+.feed-post-content {
+  background: linear-gradient(to top, #f64c72, white);
+  padding-bottom: 15px;
+  border-radius: 6px;
+  border: solid #2f2fa2;
+  margin-bottom: 20px;
+  /* Add subtle drop shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Feed Title Icon Styles */
+.feed-title-icon {
+  border-radius: 6px;
+  border: solid #2f2fa2;
+}
+
+/* Feed Container Box Styles */
+.feed-container-box {
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+/* Mark as Read Button Styles */
+.mark-as-read {
+  color: white;
+  background-color: #2f2fa2
