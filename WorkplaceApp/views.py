@@ -28,7 +28,6 @@ def createstuacc(request):
         linkedin = request.POST['acc']
         username = request.POST['username']
         password = request.POST['password']
-
         # Validation
         if not all([fname, lname, address, email, phone, uni, degree, propic, resume, linkedin, username, password]):
             messages.error(request, 'All fields are required')
@@ -85,7 +84,7 @@ def createcomacc(request):
     if request.method == 'POST':
         comname = request.POST['companyname']
         regnmbr = request.POST['regnumber']
-        address = request.POST['Address']
+        address = request.POST['address']
         email = request.POST['email']
         phone = request.POST['phone']
         prefield = request.POST['prefield']
@@ -140,7 +139,8 @@ def createcomacc(request):
                                                       username=username, password=password, profilepic=propic)
             createu.save()
             messages.info(request, 'Company user account created succefully!')
-            return redirect('comacc')
+            print('Created')
+            return redirect('addpost', createu)
 
     else:
         return render(request, 'createcomacc.html')

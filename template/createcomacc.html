@@ -75,11 +75,14 @@
           height: 13px;
       }
   </style>
-    {% for message in messages %}
-    <h5>{{ message }}</h5>
-    {% endfor %}
+
   </div>
   <center>
+    <div style="margin-top: 10px; background-color: aliceblue;">
+      {% for message in messages %}
+      <h5>{{ message }}</h5>
+      {% endfor %}
+    </div>
     <div id="createaccbox">
       <br><img src="{% static 'images/WorkplaceIcon.png' %}" alt="Company Logo" style="height: 64px; width: auto;" class="companyLogo"><br><br>
       <div class="input-control">
