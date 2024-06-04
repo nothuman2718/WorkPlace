@@ -103,6 +103,18 @@
                 </div>
 
                 <div class="input-control">
+                    <label for="lastname">University:</label>
+                    <input type="text" id="university" class="details" name="uni" required pattern="[A-Za-z ]+" title="Please enter alphabets and spaces only">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="lastname">Degree:</label>
+                    <input type="text" id="degree" class="details0" name="degree" required pattern="[A-Za-z ]+" title="Please enter alphabets and spaces only">
+                    <div class="error"></div>
+                </div>
+                
+                <div class="input-control">
                     <label for="address">Address:</label>
                     <input type="text" id="address" class="details" name="address" required>
                     <div class="error"></div>
@@ -119,16 +131,38 @@
                     <input type="text" id="phone" class="details" name="phone" required pattern="[6-9]\d{9}" title="Please enter a valid 10-digit phone number starting with 6-9">
                     <div class="error"></div>
                 </div>
-
+                
                 <div class="input-control">
                     <label for="stupropic">Profile Picture:</label>
                     <input type="file" name="stupropic" accept=".jpg,.png" required>
                     <div class="error"></div>
                 </div>
+                
+                <div class="input-control">
+                    <label for="stupropic">Resume</label>
+                    <input type="file" name="resume" [fname, lname, address, email, phone, uni, degree, propic, resume, linkedin, username, password]accept=".pdf" required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="lastname">Linkedin name:</label>
+                    <input type="text" id="linkedin" class="details" name="acc" required pattern="[A-Za-z ]+" title="Please enter alphabets and spaces only">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="lastname">Username (For WorkPlace):</label>
+                    <input type="text" id="usernamw" class="details" name="username" required>
+                </div> <br>
+
+                <div class="input-control">
+                    <label for="lastname">Password(For WorkPlace):</label>
+                    <input type="password" id="password" class="details" name="password" required>
+                </div><br>
 
                 <!-- Add other input fields with similar structure -->
 
-                <button type="button" id="createacc-subBtn">Submit</button><br><br>
+                <button type="submit" id="createacc-subBtn">Submit</button><br><br>
                 <a href="{% url 'login' %}"><button type="button" id="createacc-logBtn">Log In</button></a><br><br>
             </form>
         </div>
